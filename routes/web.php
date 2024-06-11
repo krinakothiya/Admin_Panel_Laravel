@@ -44,7 +44,7 @@ Route::group(
         });
 
 
-        Route::get('/daskbord/product/list', [ProductController::class, 'index'])->name('index');
+        Route::get('/product/list', [ProductController::class, 'index'])->name('index');
         Route::get('/product/create', [ProductController::class, 'create'])->name('create');              // use to create user from
         Route::post('/create', [ProductController::class, 'store'])->name('user.store');
 
